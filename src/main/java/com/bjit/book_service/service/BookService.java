@@ -15,4 +15,6 @@ public interface BookService {
     void delete(Long id);
 
     void update(BookReqResModel bookReqResModel, Long id);
+
+    List<BookEntity> findByAuthorAndBookName(String author, String bookName);
 }

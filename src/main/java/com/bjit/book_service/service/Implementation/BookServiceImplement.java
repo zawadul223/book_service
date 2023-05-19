@@ -61,4 +61,10 @@ public class BookServiceImplement implements BookService {
             throw new RuntimeException();
         }
     }
+
+    @Override
+    public List<BookEntity> findByAuthorAndBookName(String author, String bookName){
+        return bookRepository.findByAuthorAndBookName(author, bookName);
+    }
+
 }
